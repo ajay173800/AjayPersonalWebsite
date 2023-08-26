@@ -1,0 +1,40 @@
+.background{
+    width: auto;
+    height: 880px;;
+    background-color: black;
+}
+
+.middle{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.body2{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.btn {
+
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: inherit;
+    margin:0 auto;
+    display:block;
+    
+    
+  }

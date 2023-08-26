@@ -1,0 +1,140 @@
+.middle{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    
+}
+
+.container {
+    
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -165%);
+
+    height: 600px;
+    width: 450px;
+    border: steelblue;
+    border-style: solid;
+    overflow: auto;
+}
+
+.imagepos{
+    /* display: inline-block; */
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 11%);
+}
+.background{
+    width: auto;
+    height: 900px;
+    background-color: black;
+}
+
+.perfect{
+    color:white;
+    font-size: 40px;
+    font-family:Apple Chancery, cursive;
+}
+
+.test{
+    color: white;
+}
+
+.text{
+    color: white;
+    font-family: cursive;
+
+}
+
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(35%, 20%);
+    
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn {
+    align-self: center;
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    margin-right: 0;
+    float: right;
+
+    
+  }
+
+  .btn2{
+    align-self: center;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    margin-right: 0;
+    float: right;
+  }
+
+  .btn3{
+    align-self: center;
+    background: purple;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    margin-right: 0;
+    float: right;
+  }
+
+  .btn4{
+    align-self: center;
+    background: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    margin-right: 0;
+    float: right;
+  }
+
+  .btn5{
+    align-self: center;
+    background: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    margin-right: 0;
+    float: right;
+  }

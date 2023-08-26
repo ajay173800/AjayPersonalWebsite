@@ -1,0 +1,227 @@
+.background{
+    width: auto;
+    height: 880px;;
+    background-color: black;
+}
+
+.middle{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.body2{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.btn {
+
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: inherit;
+    margin:0 auto;
+    display:block;
+    position: relative;
+    top: 5%;
+    
+    
+  }
+
+  
+  *{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    height: 100vh;
+    background-color: #36768c;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+     overflow: hidden; 
+     border: 8px solid white;
+  }
+  
+  .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-body{
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    position: absolute;
+  
+     background: orange; 
+     backdrop-filter: blur(5px);
+    border-radius: 15px;
+  
+  } 
+  
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+}
+
+.maincontainer2{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, 30%);
+  
+  }
+
+  .maincontainer3{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -80%);
+  }
+
+  .maincontainer4{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-175%, 30%);
+  }
+
+  .maincontainer5{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-175%, -79%);
+  }
+
+  .maincontainer6{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thefront h2, .theback h2{
+    font-family: 'zilla slab', sans-serif;
+    padding: 1px;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+  }

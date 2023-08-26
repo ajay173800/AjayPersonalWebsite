@@ -1,0 +1,56 @@
+
+<div class = "background">
+<div class = "middle">Contact Page
+
+
+</div>
+
+<div class = "container">
+
+    <div class = "sub">Contact Me</div>
+    <br />
+
+    <div class = "body2">Here are some ways to contact me. You can read my contact information down below and/or you can click the apps shown underneath the written infoormation. Please feel free to reach out to me!!!</div>
+    <br />
+    <div class = "body">Phone Number: 732-877-2898</div>
+    <div class = "body">Email Address: ajay173800@gmail.com</div>
+    <div class = "body">Linkedin: www.linkedin.com/in/ajay-anand-215a87229
+        </div>
+        <div class = "body">Snapchat Username: aj_coolguy_haha</div>
+
+        <br />
+
+        <img class = "pos" [height]="50" [width]="50" (click)="goLinkedin()" src = "../assets/images/linkedin.png">
+        <img class = "pos2" [height]="50" [width]="50" (click)="goGmail()" src = "../assets/images/Gmail_icon_(2020).svg.png">
+        <img class = "pos3" [height]="50" [width]="50"  (click)="goGitHub()" src = "https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png">
+        <img  class = "pos4" [height]="50" [width]="50" (click)="goWhatsApp()" src = "https://cdn-icons-png.flaticon.com/512/124/124034.png">
+
+    <br />
+    <br />
+
+
+    <div class = "body3">Please let me know if there are other ways for you to connect with me. Type down below and I will see your response. </div>
+   <br />
+    <form>
+        <div>
+            <label class = "lab" for = "password">Input Other Social Media Platform (Optional)</label>
+            <input class = "a" matInput [style.font-size.px] = "30" placeholder="Other Contact" type = "text" id = "username" name = "username" [(ngModel)] = "sm" required >
+            <button class = "btn12" (click)="add()">Add</button>
+
+        </div>
+    </form>
+
+
+
+</div>
+
+<br />
+<br />
+
+
+<button class = "btn" (click)="goBack()">Home</button>
+
+
+</div>
+
+
