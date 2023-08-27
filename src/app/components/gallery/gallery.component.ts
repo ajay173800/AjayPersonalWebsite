@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class GalleryComponent {
 
-
+  x: number = 0;
+  
   constructor (private router: Router) { }
+
+
 
   images = [
     {
@@ -34,7 +37,33 @@ export class GalleryComponent {
     },
   ]
 
+  audio = new Audio();
+
   goHome(){
+    this.audio.pause();
     this.router.navigate(['']);
+
+  }
+
+
+  
+  music(){
+    this.audio.src = "../assets/cool.mp3";
+
+
+    if(this.x %2 === 0){
+      alert("you have turned on music");
+      
+      this.audio.load();
+      this.audio.play();
+    }
+
+    else{
+      alert("you have turned off music");
+
+      this.audio.pause();
+    }
+
+    this.x = this.x+1;
   }
 }

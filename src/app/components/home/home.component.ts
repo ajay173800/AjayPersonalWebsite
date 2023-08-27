@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
+  
+
   constructor(private router: Router){ };
 
   goContact(){
@@ -15,6 +17,7 @@ export class HomeComponent {
   }
 
   goGallery(){
+    
     this.router.navigate(['gallery']);
   }
 
@@ -29,4 +32,7 @@ export class HomeComponent {
   goExperience(){
     this.router.navigate(['experience']);
   }
+
+  
+
 }
