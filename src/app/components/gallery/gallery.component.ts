@@ -48,7 +48,7 @@ export class GalleryComponent {
 
   
   music(){
-    this.audio.src = "assets/cool.mp3";
+    this.audio.src = "assets/Dammit.mp3";
 
 
     if(this.x %2 === 0){
