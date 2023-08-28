@@ -144,10 +144,34 @@ body {
     margin:0 auto;
     display:block;
     position: absolute;
-    left: 25%;
+    left: 21%;
+    bottom: 3%;
     
     
   }
+
+  
+.btn2 {
+
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: inherit;
+    margin:0 auto;
+    display:block;
+    position: absolute;
+    left: 30%;
+    
+    
+    
+  }
+
 
 
 

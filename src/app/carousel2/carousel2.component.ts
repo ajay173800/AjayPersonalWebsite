@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -21,6 +22,7 @@ export class Carousel2Component {
   @Input() autoSlide = false;
 
 
+  constructor(private router: Router) { }
   selectedIndex = 0;
 
   ctr: number = 0;
@@ -74,6 +76,7 @@ onNextClick(): void{
 audio = new Audio();
 
 
+
 play(){
 
     if(this.selectedIndex === 0){
@@ -87,6 +90,7 @@ play(){
       }
 
       else{
+
         this.audio.pause();
         this.ctr = this.ctr + 1;
       }
@@ -154,5 +158,10 @@ play(){
   
 
 
+}
+
+goHome(){
+  this.audio.pause();
+  this.router.navigate(['']);
 }
 }
