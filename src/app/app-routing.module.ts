@@ -6,6 +6,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ProjectComponent } from './components/project/project.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { PlaylistComponent } from './components/playlist/playlist.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'experience', component: ExperienceComponent}
+  {path: 'experience', component: ExperienceComponent},
+  {path: 'playlist', component: PlaylistComponent}
 
 ];
 

@@ -33,6 +33,11 @@ export class HomeComponent {
     this.router.navigate(['experience']);
   }
 
+  goPlaylist(){
+    this.router.navigate(['playlist']);
+  }
+
+
   
 
 }

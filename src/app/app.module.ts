@@ -12,8 +12,21 @@ import { CarouselModule } from './carousel/carousel.module';
 import { ProjectComponent } from './components/project/project.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { PlaylistComponent } from './components/playlist/playlist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { CarouselComponent } from './carousel/carousel.component';
 // import { CarouselModule } from './carousel/carousel.module';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatSliderModule } from '@angular/material/slider';
+import { Carousel2Module } from './carousel2/carousel2.module';
+
+
 
 @NgModule({
   declarations: [
@@ -23,13 +36,25 @@ import { ExperienceComponent } from './components/experience/experience.componen
     GalleryComponent,
     ProjectComponent,
     AboutComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CarouselModule
+    CarouselModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule, 
+    MatProgressBarModule,
+    MatTableModule,
+    MatSliderModule,
+    Carousel2Module
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
